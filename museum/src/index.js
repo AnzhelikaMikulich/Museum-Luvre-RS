@@ -6,6 +6,15 @@ progress.forEach((element) =>
   })
 );
 
+const poster = document.querySelector('.video-img-poster');
+const videoPlayButton = document.querySelector('.video-img-svg')
+
+  
+
+document.addEventListener('click',()=>{
+  poster.style.display = 'none'
+})
+
 //-------Welcome Slider-------//
 
 const prev = document.getElementById("btn-prev");
