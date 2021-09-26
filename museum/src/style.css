@@ -457,7 +457,7 @@ ul li {
   border: 3px solid var(--ligt-color);
   width: 36px;
   height: 36px;
-  background: url(../assets/explore-slider/after.jpg);
+  background: url(./assets/explore-slider/after.jpg);
   transform: translate(-50%, -50%);
 }
 /* ==========video========== */
@@ -643,9 +643,10 @@ ul li {
 }
 .picture-inner-container {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   flex-basis: 456px;
-  height: 2350px;
+  height: 2500px;
   flex-wrap: wrap;
   row-gap: 24px;
   column-gap: 36px;
@@ -666,7 +667,9 @@ ul li {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 /* ==========Tickets========== */
-
+.tickets {
+  background-color: var(--ligt-color);
+}
 .tickets-content {
   display: flex;
   flex-direction: column;
@@ -680,7 +683,7 @@ ul li {
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: var(--ligt-color);
+  color: var(--font-gold);
   margin-bottom: 103px;
 }
 .ticketc-buy {
@@ -705,7 +708,7 @@ ul li {
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: var(--ligt-color);
+  color: var(--dark-color);
 }
 .ticket-cost {
   padding: 20px 0 35px;
@@ -729,7 +732,7 @@ ul li {
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  color: var(--ligt-color);
+  color: var(--dark-color);
 }
 .container-check input {
   position: absolute;
@@ -742,15 +745,15 @@ ul li {
   left: 0px;
   height: 17px;
   width: 17px;
-  background-color: var(--dark-color);
+  background-color: var(--ligt-color);
   border-radius: 50%;
-  border: 1px solid var(--ligt-color);
+  border: 1px solid var(--dark-color);
 }
 .container-check:hover input ~ .checkmark {
   background-color: var(--font-gold);
 }
 .container-check input:checked ~ .checkmark {
-  background-color: var(--dark-color);
+  background-color: var(--ligt-color);
 }
 .checkmark:after {
   content: "";
@@ -767,12 +770,12 @@ ul li {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: white;
+  background: var(--dark-color);
 }
 .ticketc-btn {
   width: 175px;
   height: 50px;
-  background: var(--ligt-color);
+  background: var(--dark-color);
   border-radius: 2px;
   margin-left: -25px;
   font-family: Roboto;
@@ -786,14 +789,14 @@ ul li {
   letter-spacing: 2px;
   /* width: 175px;
   height: 50px; */
-  color: var(--dark-color);
+  color: var(--ligt-color);
 }
 .ticketc-btn:hover {
   background-color: var(--font-gold);
   transition: 0.5s;
 }
 .ticketc-btn:not(:hover) {
-  background-color: var(--ligt-color);
+  background-color: var(--dark-color);
   transition: 0.5s;
 }
 .tickets-number {
@@ -806,10 +809,10 @@ ul li {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: var(--ligt-color);
+  color: var(--dark-color);
 }
 .tickets-count {
-  border: 3px solid var(--ligt-color);
+  border: 3px solid var(--dark-color);
   width: 150px;
   height: 50px;
   display: flex;
@@ -823,7 +826,7 @@ ul li {
   font-size: 32px;
   line-height: 37px;
   text-align: center;
-  color: var(--ligt-color);
+  color: var(--dark-color);
   background: transparent;
 }
 .tickets-count-btn:hover {
@@ -835,7 +838,7 @@ ul li {
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
-  color: var(--ligt-color);
+  color: var(--dark-color);
 }
 
 /* ==========contacts========== */

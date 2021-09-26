@@ -1,3 +1,8 @@
+import randomImg from "./galerry";
+
+//-------Galerry-------//
+randomImg();
+
 const progress = document.querySelectorAll(".progress");
 progress.forEach((element) =>
   element.addEventListener("input", function () {
@@ -6,14 +11,12 @@ progress.forEach((element) =>
   })
 );
 
-const poster = document.querySelector('.video-img-poster');
-const videoPlayButton = document.querySelector('.video-img-svg')
+const poster = document.querySelector(".video-img-poster");
+const videoPlayButton = document.querySelector(".video-img-svg");
 
-  
-
-document.addEventListener('click',()=>{
-  poster.style.display = 'none'
-})
+document.addEventListener("click", () => {
+  poster.style.display = "none";
+});
 
 //-------Welcome Slider-------//
 
@@ -76,8 +79,8 @@ let isActiveSlider = false;
 
 document,
   addEventListener("DOMContentLoaded", () => {
-    let width = exploreSlider.offsetWidth;
-    beforeImg.style.width = `${width}px`;
+    // let width = exploreSlider.offsetWidth;
+    beforeImg.style.width = `720px`;
   });
 
 const worksExploreSlider = (x) => {
@@ -109,26 +112,25 @@ document.body.addEventListener("mousemove", (e) => {
   worksExploreSlider(x);
   pauseEvents(e);
 });
-document.body.addEventListener('touchstart',()=>{
-  isActiveSlider = true
+document.body.addEventListener("touchstart", () => {
+  isActiveSlider = true;
 });
-document.body.addEventListener('touchend',()=>{
-  isActiveSlider = false
+document.body.addEventListener("touchend", () => {
+  isActiveSlider = false;
 });
-document.body.addEventListener('touchcancel',()=>{
-  isActiveSlider = false
+document.body.addEventListener("touchcancel", () => {
+  isActiveSlider = false;
 });
-document.body.addEventListener('touchmove',(e)=>{
-  if(!isActiveSlider){
-    return
+document.body.addEventListener("touchmove", (e) => {
+  if (!isActiveSlider) {
+    return;
   }
   let x;
   let i;
-  for (i = 0; e< e.changedTouches.length; i++) {
-   x - e.changedTouches[i].pageX
-    
+  for (i = 0; e < e.changedTouches.length; i++) {
+    x - e.changedTouches[i].pageX;
   }
   x -= exploreSlider.getBoundingClientRect().left;
   worksExploreSlider(x);
   pauseEvents(e);
-})
+});
