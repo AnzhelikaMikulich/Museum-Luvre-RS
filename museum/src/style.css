@@ -622,7 +622,49 @@ ul li {
   cursor: ew-resize;
   background: var(--ligt-color);
 }
+/* * ==========Gallery========== */
+.galery {
+  background-color: var(--dark-color);
+  position: relative;
+  height: 2200px;
+  overflow: hidden;
+}
 
+.galerry-title {
+  padding: 75px 0;
+  color: var(--ligt-color);
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.picture-inner-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 456px;
+  height: 2350px;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 36px;
+}
+.picture-inner-container img:nth-child(1),
+.picture-inner-container img:nth-child(9) {
+  margin-top: 35px;
+}
+.galery::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -1px;
+  left: 0;
+  height: 360px;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
 /* ==========Tickets========== */
 
 .tickets-content {
