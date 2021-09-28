@@ -16,7 +16,7 @@ progress.forEach((element) =>
 const poster = document.querySelector(".video-img-poster");
 const videoPlayButton = document.querySelector(".video-img-svg");
 
-document.addEventListener("click", () => {
+videoPlayButton.addEventListener("click", () => {
   poster.style.display = "none";
 });
 

@@ -94,7 +94,7 @@ ul li {
 }
 .header-logo {
   display: flex;
-  gap: 21px;
+  gap: 25px;
 }
 .logo-img {
   width: 49px;
@@ -103,6 +103,9 @@ ul li {
   background-position: 0% 30%;
   background-image: url(./assets/logo-name.svg);
 }
+.header-menu {
+  margin-left: -10px;
+}
 .logo-name {
   text-transform: uppercase;
   font-family: Forum;
@@ -110,7 +113,7 @@ ul li {
   font-weight: normal;
   font-size: 28px;
   line-height: 50px;
-  color: var(--ligt-color);
+  color: #ffffff;
   letter-spacing: 5px;
 }
 .header-menu-item {
@@ -125,19 +128,19 @@ ul li {
   font-size: 22px;
   line-height: 50px;
   letter-spacing: 2px;
-  color: var(--ligt-color);
+  color: #ffffff;
 }
 .menu-link:hover {
-  color: var(--font-gold);
+  color: #9d8665;
   transition: 0.5s;
 }
 .menu-link:not(:hover) {
-  color: var(--ligt-color);
+  color: #ffffff;
   transition: 0.5s;
 }
 
 .menu-link:active {
-  color: var(--font-gold);
+  color: #9d8665;
   transition: 0.5s;
 }
 @media (max-width: 1439px) {
@@ -235,6 +238,9 @@ ul li {
   text-transform: uppercase;
 
   color: var(--ligt-color);
+}
+.slider-current > span {
+  color: #030303;
 }
 #btn-prev {
   background: transparent;
@@ -338,7 +344,7 @@ ul li {
   left: 0;
   right: 0;
   height: 3px;
-  background-color: var(--button-line-color);
+  background-color: #710707;
 }
 .underline-title-little {
   position: relative;
@@ -750,7 +756,7 @@ ul li {
   padding: 0 0 25px 0;
 }
 .ticket-cost {
-  padding: 20px 0 35px;
+  padding: 40px 0 42px;
   letter-spacing: 1.3px;
 }
 .amount {
@@ -866,7 +872,7 @@ ul li {
   height: 50px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 15px;
+  margin-bottom: -5px;
 }
 .tickets-count-btn {
   font-family: Roboto;
@@ -1119,12 +1125,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* ==========contacts========== */
 .contacts {
-  background-color: var(--ligt-color);
+  background-color: #ffffff;
 }
 .contacts-content {
   display: flex;
   flex-direction: column;
-  padding: 75px 0 75px 0;
+  padding: 75px 0 73px 0;
 }
 .contacts-title {
   font-family: Forum;
@@ -1134,7 +1140,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: var(--font-gold);
+  color: #9d8665;
   margin-bottom: 100px;
 }
 .contacts-deskription {
@@ -1147,8 +1153,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 500;
   font-size: 28px;
   line-height: 33px;
-  color: var(--dark-color);
-  padding: 12px 0 36px;
+  color: #030303;
+  padding: 0px 0 50px;
 }
 .contacts-text-title span {
   display: block;
@@ -1160,10 +1166,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 22px;
   line-height: 26px;
   color: var(--dark-color);
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .sotial {
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -1174,7 +1180,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* ==========footer========== */
 .footer {
-  background-color: var(--dark-color);
+  background-color: #030303;
   height: 392px;
   display: flex;
   flex-direction: column;
@@ -1182,11 +1188,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 75px 0;
+  padding: 75px 0 55px 0;
 }
 .footer-logo {
   display: flex;
-  gap: 21px;
+  gap: 25px;
 }
 .footer-menu {
   position: relative;
@@ -1200,7 +1206,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   flex-wrap: wrap;
   height: 150px;
-  column-gap: 155px;
+  column-gap: 170px;
 }
 .sotial-menu {
   display: flex;
@@ -1214,20 +1220,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid var(--ligt-color);
+  border: 1px solid #ffffff;
 }
 .sotial-icons:hover {
-  border: 1px solid var(--font-gold);
+  border: 1px solid #9d8665;
   transition: 0.5s;
 }
 .sotial-icons:hover path {
-  fill: var(--font-gold);
+  fill: #9d8665;
   transition: 0.5s;
 }
 .footer-information {
-  /* padding: 20px 0; */
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
+}
+.footer-information div:nth-child(2) {
+  padding: 0 0 0 130px;
 }
 .footer-date {
   font-family: Roboto;
