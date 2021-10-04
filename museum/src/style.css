@@ -143,6 +143,20 @@ ul li {
   color: #9d8665;
   transition: 0.5s;
 }
+.menu-link::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(./assets/menu-arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  visibility: hidden;
+}
+.menu-list {
+  position: relative;
+}
 @media (max-width: 1439px) {
   .container {
     width: 80%;
@@ -206,6 +220,17 @@ ul li {
     transform: scale(0);
     background-color: white;
   }
+  .menu-link::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(./assets/menu-arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    visibility: visible;
+  }
 }
 @media (max-width: 1220px) {
   .container {
@@ -232,7 +257,9 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding-left: 100px;
   }
   .menu_link {
     color: white;
@@ -1196,7 +1223,7 @@ ul li {
     display: none;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1050px) {
   .tickets-title {
     font-size: 50px;
     line-height: 75px;
@@ -1648,7 +1675,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .contact-map img {
   max-width: 100%;
 }
-
+@media (max-width: 1025px) {
+  .contacts-content {
+    padding: 60px 0 62px 0;
+  }
+  .contacts-title {
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    margin-bottom: 85px;
+  }
+  .contacts-deskription {
+    gap: 25px;
+  }
+  .contacts-text {
+    width: 38%;
+  }
+  .contacts-text-title {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0px 0 30px;
+  }
+  .sotial {
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 15px;
+  }
+  .contact-email {
+    padding-bottom: 15px;
+  }
+}
 /* ==========footer========== */
 .footer {
   background-color: #030303;
@@ -1731,4 +1787,40 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 3px;
   width: 100%;
   background: #666666;
+}
+@media (max-width: 1450px) {
+  .menu-body-footer {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+  }
+  .footer-menu {
+    width: 30%;
+  }
+  .footer-menu-item {
+    column-gap: 80px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .menu-body-footer {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+  }
+  .footer-menu {
+    width: 30%;
+  }
+  .footer-content {
+    padding: 52px 0 55px 0;
+  }
+  .footer-menu-item {
+    column-gap: 120px;
+  }
+  .sotial-menu {
+    padding-top: 90px;
+  }
+  .footer {
+    height: 368px;
+  }
 }
