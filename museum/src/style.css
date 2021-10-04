@@ -871,7 +871,37 @@ ul li {
   height: 12px;
   background-image: url(./assets/video/next.svg);
 }
-
+@media (max-width: 1025px) {
+  .video-content {
+    padding: 65px 0 60px 0;
+  }
+  .video-title {
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+  }
+  .video-description {
+    display: none;
+  }
+  .video-player {
+    margin-top: 0px;
+  }
+  .video-img {
+    height: 444px;
+  }
+  .video-img iframe {
+    height: 444px;
+  }
+  .video-img-poster {
+    height: 444px;
+  }
+  .video-progressbar {
+    height: 60px;
+  }
+  .progressbar-btn {
+    height: 55px;
+  }
+}
 /* * ==========Gallery========== */
 .galery {
   background-color: var(--dark-color);
