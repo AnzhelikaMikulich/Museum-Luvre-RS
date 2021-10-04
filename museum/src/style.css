@@ -1186,7 +1186,54 @@ ul li {
   background-size: cover;
   background-attachment: fixed;
 }
-
+@media (max-width: 1500px) {
+  .ticketc-buy {
+    flex: 1 1 31.3%;
+  }
+}
+@media (max-width: 1300px) {
+  .tickets-deskription div:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 1025px) {
+  .tickets-title {
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    margin-bottom: 70px;
+  }
+  .tickets-content {
+    padding: 60px 0;
+  }
+  .ticketc-buy-img {
+    width: 100%;
+    height: 440px;
+  }
+  .ticketc-buy-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .amount {
+    padding: 0 0px 12px 0px;
+  }
+  .ticketc-buy {
+    padding-left: 25px;
+  }
+  .ticketc-btn {
+    margin-left: 0px;
+  }
+  .people1024 {
+    margin-top: 15px;
+  }
+  .ticket-cost {
+    padding: 10px 0 55px;
+  }
+  .tickets-count {
+    width: 170px;
+  }
+}
 /* ===========Popap=========== */
 .popap {
   position: fixed;
