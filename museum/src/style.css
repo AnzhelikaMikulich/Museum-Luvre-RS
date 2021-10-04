@@ -800,6 +800,27 @@ ul li {
     display: none;
   }
 }
+@media (max-width: 769px) {
+  .explore-content {
+    padding: 40px 0;
+  }
+  .explore-title {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+  }
+  .explore-description {
+    display: none;
+  }
+  .explore-text {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .explore-slider {
+    max-width: 728px;
+  }
+}
 /* ==========video========== */
 .video {
   background-color: var(--ligt-color);
