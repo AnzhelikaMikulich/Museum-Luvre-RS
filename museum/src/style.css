@@ -271,6 +271,22 @@ ul li {
     height: 130px;
   }
 }
+@media (max-width: 769px) {
+  .header {
+    padding-top: 18px;
+    height: 105px;
+  }
+  .icon-menu span {
+    height: 2px;
+  }
+  .icon-menu::before,
+  .icon-menu::after {
+    height: 2px;
+  }
+  .icon-menu {
+    top: 46px;
+  }
+}
 
 /* ==========welcome========== */
 
@@ -473,6 +489,52 @@ ul li {
   }
   #btn-next {
     margin-right: 70px;
+  }
+}
+@media (max-width: 769px) {
+  .container {
+    width: 94.5%;
+  }
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome-content {
+    padding: 0 0 0 0;
+    text-align: center;
+  }
+  .welcome-title {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+  }
+  .welcome-text {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+  }
+  .welcome-button {
+    display: none;
+  }
+  .welcome-slider {
+    width: 100%;
+    position: static;
+  }
+  .slider-wrapper::before {
+    display: none;
+  }
+  .slider-dots {
+    width: 100%;
+    gap: 45px;
+    justify-content: center;
+    position: static;
+    height: 100px;
+    margin-top: -3px;
+  }
+
+  #btn-next {
+    margin-right: 0px;
   }
 }
 
