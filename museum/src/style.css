@@ -657,6 +657,39 @@ ul li {
     line-height: 23px;
   }
 }
+@media (max-width: 769px) {
+  .visiting-content {
+    padding: 39px 0 81px;
+  }
+  .visiting-title {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 63px;
+  }
+  .visiting-pictures {
+    column-gap: 56px;
+    row-gap: 35px;
+  }
+  .visiting-cards img {
+    width: 280px;
+  }
+  .visiting-cards-title {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+  .visiting-cards-text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .visiting-cards-text span {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 10px 0 0px;
+  }
+}
 /* ==========explore========== */
 
 .explore-content {
