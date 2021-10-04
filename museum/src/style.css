@@ -649,6 +649,35 @@ ul li {
   background: url(./assets/explore-slider/after.jpg);
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 1700px) {
+  .explore-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1025px) {
+  .explore-content {
+    padding: 78px 0 55px 0;
+  }
+  .explore-title {
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 83px;
+    letter-spacing: 5px;
+  }
+  .explore-description {
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 0px;
+  }
+  .explore-description-one-span {
+    display: inline;
+  }
+  .explore-text p:nth-child(3) {
+    display: none;
+  }
+}
 /* ==========video========== */
 .video {
   background-color: var(--ligt-color);
