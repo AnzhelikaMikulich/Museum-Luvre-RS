@@ -960,6 +960,10 @@ ul li {
   row-gap: 24px;
   column-gap: 36px;
 }
+.picture-inner-container img {
+  display: block;
+  width: 31%;
+}
 .picture-inner-container img:nth-child(1),
 .picture-inner-container img:nth-child(9) {
   margin-top: 45px;
@@ -974,6 +978,21 @@ ul li {
   width: 100%;
   z-index: 1;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+@media (max-width: 1025px) {
+  .galerry-title {
+    padding: 60px 0;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+  }
+  .picture-inner-container {
+    height: 1700px;
+  }
+  .galery {
+    height: 1460px;
+  }
 }
 /* ==========Tickets========== */
 .tickets {
