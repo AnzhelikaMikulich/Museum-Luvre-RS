@@ -8,10 +8,32 @@
     <title>Denon Wing</title>
   </head>
   <body>
+    <style>
+      body {
+        display: block;
+        margin: 8px;
+      }
+      .iframe {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: 999999;
+      }
+    </style>
     <iframe
+      class="iframe"
       src="https://www.google.com/maps/embed?pb=!4v1632523858043!6m8!1m7!1sCAoSLEFGMVFpcE5Sal9Dd1A0Y29ETVlkQ0hqNnFIZUJlSnBJMlZ4VTVCVXNPWDRG!2m2!1d48.8563254!2d2.3352706!3f0!4f0!5f0.7820865974627469"
       width="100%"
-      height="650px"
+      height="1300px"
       style="border: 0"
       allowfullscreen=""
       loading="lazy"

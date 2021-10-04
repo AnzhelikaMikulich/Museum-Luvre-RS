@@ -136,30 +136,39 @@ document.body.addEventListener("touchmove", (e) => {
   worksExploreSlider(x);
   pauseEvents(e);
 });
+//============ Burger====================
 
-// ========Ripple=========
+const burger = document.querySelector('.icon-menu');
+const header_menu = document.querySelector('.menu-body');
+const body = document.querySelector('body');
+const header__list = document.querySelector('.header-menu-item');
 
-const rippleButton = document.querySelector('.ripple')
-
-
-rippleButton.addEventListener('click', function (e) {
-  console.log('ripple')
-        const x = e.clientX
-        const y = e.clientY
-
-        const buttonTop = e.target.offsetTop
-        const buttonLeft = e.target.offsetLeft
-
-        const xInside = x - buttonLeft
-        const yInside = y - buttonTop
-
-        const circle = document.createElement('span')
-        circle.classList.add('circle')
-        circle.style.top = yInside + 'px'
-        circle.style.left = xInside + 'px'
-
-        this.appendChild(circle)
-
-        setTimeout(() => circle.remove(), 500)
-    })
-
+burger.onclick = function(){
+    burger.classList.toggle('active');
+    header_menu.classList.toggle('active');
+    body.classList.toggle('lock');
+}
+const menu_links = document.querySelectorAll('.menu-link[data-goto]')
+if(menu_links.length>0){
+  menu_links.forEach(menu_links=>{
+    menu_links.addEventListener('click',onMenuLinksClick)
+  })
+}
+function onMenuLinksClick(e){
+  const menu_link = e.target;
+  if (menu_link.dataset.goto && document.querySelector(menu_link.dataset.goto)) {
+    const gotoBlock = document.querySelector(menu_link.dataset.goto);
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
+    if (burger.classList.contains('active')) {
+     burger.classList.remove('active');
+     header_menu.classList.remove('active');
+     body.classList.remove('lock');
+      
+    }
+    window.scrollTo({
+      top:gotoBlockValue,
+      behavior: 'smooth'
+    });
+    e.preventDefault()
+  }
+}
