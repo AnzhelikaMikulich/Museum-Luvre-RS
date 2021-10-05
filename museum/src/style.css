@@ -121,7 +121,8 @@ ul li {
   justify-content: space-around;
   gap: 55px;
 }
-.menu-link {
+.menu-link,
+.menu-link-f {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -134,12 +135,24 @@ ul li {
   color: #9d8665;
   transition: 0.5s;
 }
+.menu-link-f:hover {
+  color: #9d8665;
+  transition: 0.5s;
+}
 .menu-link:not(:hover) {
+  color: #ffffff;
+  transition: 0.5s;
+}
+.menu-link-f:not(:hover) {
   color: #ffffff;
   transition: 0.5s;
 }
 
 .menu-link:active {
+  color: #9d8665;
+  transition: 0.5s;
+}
+.menu-link-f:active {
   color: #9d8665;
   transition: 0.5s;
 }
@@ -2103,5 +2116,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     left: -180px;
     top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 411px;
+  }
+  .sotial-menu {
+    position: absolute;
+    top: 130px;
+    left: 300px;
+  }
+  .footer-content {
+    position: relative;
+    padding: 40px 0 215px 0;
+  }
+  .menu-body-footer {
+    position: absolute;
+    left: -160px;
+    top: 0px;
+  }
+  .footer-information {
+    padding: 40px 0;
   }
 }
