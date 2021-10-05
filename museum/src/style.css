@@ -2127,6 +2127,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 1024px;
   }
 }
+@media (max-width: 1020px) {
+  .tickets-form {
+    width: 100%;
+  }
+  .tickets-form-wrapper {
+    flex-direction: column;
+  }
+  .tickets-blok-left {
+    width: 100%;
+  }
+  .popap-body {
+    max-width: 590px;
+  }
+  .tickets-form-wrapper {
+    width: 90%;
+    gap: 50px;
+  }
+  .right-content {
+    padding: 25px 15px;
+  }
+  .form-time {
+    gap: 40px;
+  }
+  .form-time > .form-inputs {
+    width: 50%;
+  }
+  .form-fild {
+    padding-top: 30px;
+  }
+}
 
 /* ==========contacts========== */
 .contacts {
