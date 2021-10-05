@@ -313,7 +313,7 @@ ul li {
     top: 5px;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .logo-img {
     width: 29px;
     height: 16px;
@@ -593,7 +593,7 @@ ul li {
     line-height: 40px;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .container {
     width: 90.5%;
   }
@@ -785,7 +785,7 @@ ul li {
     margin: 10px 0 0px;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .visiting-title {
     font-size: 28px;
     line-height: 40px;
@@ -951,7 +951,7 @@ ul li {
     height: 368px;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .explore-title {
     font-size: 28px;
     line-height: 40px;
@@ -1278,7 +1278,7 @@ ul li {
     background-size: contain;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .video-title {
     font-size: 28px;
     line-height: 40px;
@@ -1415,7 +1415,7 @@ ul li {
     width: 49%;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .galerry-title {
     padding: 40px 0;
     font-size: 28px;
@@ -1711,7 +1711,7 @@ ul li {
     height: 300px;
   }
 }
-@media (max-width: 421px) {
+@media (max-width: 425px) {
   .ticketc-buy {
     flex: 1 0 31.3%;
   }
@@ -2238,6 +2238,42 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 21px;
   }
 }
+@media (max-width: 425px) {
+  .contacts-content {
+    padding: 40px 0 35px 0;
+  }
+  .contacts-title {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+  }
+  .contacts-deskription {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .contacts-text {
+    width: 80%;
+  }
+  .contacts-text-title {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px 0 40px;
+  }
+  .sotial {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 15px;
+  }
+  .contact-email {
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .contact-map {
+    margin-top: 15px;
+  }
+}
 /* ==========footer========== */
 .footer {
   background-color: #030303;
@@ -2426,19 +2462,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     column-gap: 50px;
   }
 }
-
-@media (max-width: 421px) {
-  .footer {
-    height: 600px;
-  }
+@media (max-width: 425px) {
   .footer-menu-item {
-    column-gap: 50px;
+    column-gap: 80px;
+    height: 100px;
   }
-  .footer-information {
-    flex-direction: column;
-    align-items: center;
+  .footer-menu {
+    width: 60%;
+    margin-top: 45px;
+  }
+  .footer-logo {
+    align-self: flex-start;
+  }
+  .footer {
+    height: 400px;
   }
   .sotial-menu {
-    gap: 10px;
+    gap: 5px;
+    padding-top: 5px;
   }
+  .footer-information div:nth-child(2) {
+    display: none;
+  }
+  .footer-date,
+  .footer-date > a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 415px) {
 }
