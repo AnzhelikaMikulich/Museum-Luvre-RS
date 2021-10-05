@@ -2153,8 +2153,66 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .form-time > .form-inputs {
     width: 50%;
   }
+  .right-cards {
+    width: 100%;
+  }
   .form-fild {
     padding-top: 30px;
+  }
+}
+@media (max-width: 530px) {
+  .tickets-title-form {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .tickets-form {
+    width: 100%;
+  }
+  .tickets-form-wrapper {
+    flex-direction: column;
+  }
+  .tickets-blok-left {
+    width: 100%;
+  }
+  .popap-body {
+    max-width: 420px;
+  }
+  .tickets-form-wrapper {
+    width: 85%;
+    gap: 50px;
+  }
+  .right-content {
+    padding: 25px 15px;
+  }
+  .form-time {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .form-time > .form-inputs {
+    width: 100%;
+  }
+  .right-cards {
+    width: 100%;
+  }
+  .form-fild {
+    padding-top: 30px;
+  }
+  .form-input-style-data {
+    width: 255px;
+  }
+  .right-cards {
+    height: auto;
+  }
+  .right-cards-fofm-one {
+    margin-bottom: 20px;
+  }
+  .right-cards-fofm-one,
+  .right-cards-fofm-two {
+    position: static;
+  }
+  .right-cards-fofm-one img,
+  .right-cards-fofm-two img {
+    max-width: 100%;
   }
 }
 
