@@ -951,6 +951,16 @@ ul li {
     height: 368px;
   }
 }
+@media (max-width: 421px) {
+  .explore-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .explore-change::after {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 /* ==========video========== */
 .video {
