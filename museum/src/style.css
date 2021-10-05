@@ -785,6 +785,35 @@ ul li {
     margin: 10px 0 0px;
   }
 }
+@media (max-width: 421px) {
+  .visiting-title {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 63px;
+  }
+  .visiting-cards-title {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 5px;
+  }
+  .visiting-cards-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .visiting-cards-text span {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0 0px;
+  }
+  .visiting-pictures {
+    row-gap: 40px;
+  }
+  .visiting-content {
+    padding: 39px 0 37px;
+  }
+}
 /* ==========explore========== */
 
 .explore-content {
