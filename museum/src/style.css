@@ -1415,6 +1415,24 @@ ul li {
     width: 49%;
   }
 }
+@media (max-width: 421px) {
+  .galerry-title {
+    padding: 40px 0;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .picture-inner-container {
+    height: 1600px;
+    column-gap: 24px;
+  }
+  .galery {
+    height: 755px;
+  }
+  .picture-inner-container img {
+    display: block;
+    width: 47%;
+  }
+}
 /* ==========Tickets========== */
 .tickets {
   background-color: var(--ligt-color);
