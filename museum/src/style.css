@@ -1719,6 +1719,10 @@ ul li {
     font-size: 28px;
     line-height: 40px;
   }
+  .ticketc-btn {
+    font-size: 16px;
+    line-height: 0px;
+  }
   .tickets-deskription {
     gap: 40px;
     flex-direction: column;
@@ -2492,4 +2496,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 415px) {
+  .footer-menu-item {
+    column-gap: 30px;
+  }
+  .menu-link::after {
+    visibility: hidden;
+  }
 }
