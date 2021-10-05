@@ -81,8 +81,8 @@ let isActiveSlider = false;
 
 document,
   addEventListener("DOMContentLoaded", () => {
-    // let width = exploreSlider.offsetWidth;
-    beforeImg.style.width = `720px`;
+    let width = exploreSlider.offsetWidth;
+    // beforeImg.style.width = `720px`;
   });
 
 const worksExploreSlider = (x) => {
