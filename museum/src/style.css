@@ -1195,6 +1195,25 @@ ul li {
     height: 1460px;
   }
 }
+@media (max-width: 769px) {
+  .galerry-title {
+    padding: 40px 0;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+  }
+  .picture-inner-container {
+    height: 1600px;
+    column-gap: 24px;
+  }
+  .galery {
+    height: 1220px;
+  }
+  .picture-inner-container img {
+    display: block;
+    width: 49%;
+  }
+}
 /* ==========Tickets========== */
 .tickets {
   background-color: var(--ligt-color);
@@ -1433,6 +1452,44 @@ ul li {
   }
   .tickets-count {
     width: 170px;
+  }
+}
+@media (max-width: 769px) {
+  .ticketc-buy {
+    flex: 1 0 31.3%;
+  }
+  .tickets-title {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+  .tickets-content {
+    padding: 40px 0;
+  }
+  .ticketc-buy-img {
+    height: 340px;
+  }
+  .amount {
+    padding: 0 0px 18px 0px;
+  }
+  .ticketc-buy {
+    padding-left: 0px;
+  }
+  .ticketc-btn {
+    margin-left: 0px;
+  }
+  .people1024 {
+    margin-top: 10px;
+  }
+  .ticket-cost {
+    padding: 25px 0;
+  }
+  .tickets-count {
+    width: 175px;
+  }
+  .tikets-parallax {
+    height: 300px;
   }
 }
 /* ===========Popap=========== */
