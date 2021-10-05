@@ -299,10 +299,18 @@ ul li {
   .icon-menu {
     top: 46px;
   }
-}
-@media (max-width: 768px) {
+  .menu-link,
+  .menu-link-f {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+  }
   .header-menu-item {
     padding-left: 10px;
+  }
+
+  .menu-link::after {
+    top: 5px;
   }
 }
 
@@ -2132,14 +2140,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 130px;
     left: 300px;
   }
+  .footer-menu-item {
+    row-gap: 27px;
+    column-gap: 185px;
+  }
   .footer-content {
     position: relative;
     padding: 40px 0 215px 0;
   }
   .menu-body-footer {
     position: absolute;
-    left: -160px;
-    top: 0px;
+    left: -150px;
+    top: 15px;
   }
   .footer-information {
     padding: 40px 0;
