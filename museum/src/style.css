@@ -1936,6 +1936,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-bottom: 15px;
   }
 }
+@media (max-width: 769px) {
+  .contacts-content {
+    padding: 40px 0 68px 0;
+  }
+  .contacts-title {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 65px;
+  }
+  .contacts-deskription {
+    gap: 25px;
+    flex-direction: column;
+  }
+  .contacts-text {
+    width: 38%;
+  }
+  .contacts-text-title {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0px 0 40px;
+  }
+  .sotial {
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 15px;
+  }
+  .contact-email {
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
 /* ==========footer========== */
 .footer {
   background-color: #030303;
