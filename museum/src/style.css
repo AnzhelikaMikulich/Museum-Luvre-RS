@@ -2122,6 +2122,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: flex-end;
 }
 
+@media (max-width: 1440px) {
+  .tickets-form {
+    width: 1024px;
+  }
+}
+
 /* ==========contacts========== */
 .contacts {
   background-color: #ffffff;
