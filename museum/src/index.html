@@ -8,6 +8,10 @@
       content="width=device-width,initial-scale=1,maximumscale"
     />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Museum</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -73,22 +77,32 @@
                 <div class="welcome-button">Discover the Louvre</div>
               </a>
             </div>
-            <div class="welcome-slider">
-              <div class="slider-wrapper">
-                <div class="slide-img active">
-                  <img src="./assets/welcome-slider/1.jpg" alt="slider/1" />
+            <div class="welcome-slider swiper-container">
+              <div class="slider-wrapper swiper-wrapper">
+                <div class="slide-img active swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./assets/welcome-slider/1.jpg" alt="slider/1" />
+                  </div>
                 </div>
-                <div class="slide-img">
-                  <img src="./assets/welcome-slider/2.jpg" alt="slider/2" />
+                <div class="slide-img swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./assets/welcome-slider/2.jpg" alt="slider/2" />
+                  </div>
                 </div>
-                <div class="slide-img">
-                  <img src="./assets/welcome-slider/3.jpg" alt="slider/3" />
+                <div class="slide-img swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./assets/welcome-slider/3.jpg" alt="slider/3" />
+                  </div>
                 </div>
-                <div class="slide-img">
-                  <img src="./assets/welcome-slider/4.jpg" alt="slider/4" />
+                <div class="slide-img swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./assets/welcome-slider/4.jpg" alt="slider/4" />
+                  </div>
                 </div>
-                <div class="slide-img">
-                  <img src="./assets/welcome-slider/5.jpg" alt="slider/5" />
+                <div class="slide-img swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./assets/welcome-slider/5.jpg" alt="slider/5" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,16 +112,10 @@
                   01 <span>i</span>| <span>i</span>05
                 </div>
               </div>
+              <div class="slider-pp swiper-pagination"></div>
               <div class="slider-pp">
-                <div class="dots active-dot"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
-              </div>
-              <div class="slider-pp">
-                <div id="btn-prev"></div>
-                <div id="btn-next"></div>
+                <div class="btn-prev" id="btn-prev"></div>
+                <div class="btn-next" id="btn-next"></div>
               </div>
             </div>
           </div>
@@ -833,6 +841,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

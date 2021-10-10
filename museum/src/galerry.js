@@ -10,7 +10,7 @@ function randomImg() {
   shuffle(arrImg);
   arrImg.map((e) => {
     const img = `<img src="./assets/galery/galery${e}.jpg" alt="galery1">`;
-    console.log(e);
+    
     pictureInnerContainer.innerHTML += img;
   });
 }
