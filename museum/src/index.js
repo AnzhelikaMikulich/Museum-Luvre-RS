@@ -1,7 +1,9 @@
 import randomImg from "./galerry";
 
 //-------Galerry-------//
-randomImg();
+
+randomImg()
+
 
 const progress = document.querySelectorAll(".progress");
 progress.forEach((element) =>
@@ -39,6 +41,7 @@ const prev = document.getElementById("btn-prev");
 const next = document.getElementById("btn-next");
 const paginationSlides = document.querySelectorAll(".swiper-pagination span");
 const sliderNumber = document.querySelector(".slider-current");
+const slideImg = document.querySelectorAll(".image-slider__image img")
 let currentSlider = 0;
 
 const activeWelcomeSlide = (n) => {
@@ -71,9 +74,22 @@ prev.addEventListener("click", prevWelcomeSlide);
 paginationSlides.forEach((element, i) => {
   element.addEventListener("click", function () {
     currentSlider = i;
+    console.log(i)
     sliderNumber.innerHTML = `0${currentSlider + 1} | 05`;
   });
 });
+slideImg.forEach((element, i) => {
+  element.addEventListener("touchstart", function () {
+    currentSlider = i;
+    if(i<= 4){
+      sliderNumber.innerHTML = `0${currentSlider+1} | 05`;
+    }else if(i> 4){
+      currentSlider = 0
+      sliderNumber.innerHTML = `0${currentSlider+1} | 05`;
+    }
+  });
+});
+
 
 //-------Explore Slider-------//
 
@@ -126,22 +142,19 @@ document.body.addEventListener("touchstart", () => {
 document.body.addEventListener("touchend", () => {
   isActiveSlider = false;
 });
-document.body.addEventListener("touchcancel", () => {
+document.body.addEventListener("mouseleave", () => {
   isActiveSlider = false;
 });
-document.body.addEventListener("touchmove", (e) => {
+document.body.addEventListener("touchstart", (e) => {
   if (!isActiveSlider) {
     return;
   }
-  let x;
-  let i;
-  for (i = 0; e < e.changedTouches.length; i++) {
-    x - e.changedTouches[i].pageX;
-  }
+  let x = e.pageX;
   x -= exploreSlider.getBoundingClientRect().left;
   worksExploreSlider(x);
   pauseEvents(e);
 });
+
 //============ Burger====================
 
 const burger = document.querySelector(".icon-menu");

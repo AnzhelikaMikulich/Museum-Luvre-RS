@@ -916,7 +916,7 @@ ul li {
 }
 .explore-slider {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 720px;
   width: 100%;
 }
@@ -1433,6 +1433,15 @@ ul li {
 .picture-inner-container img:nth-child(1),
 .picture-inner-container img:nth-child(9) {
   margin-top: 45px;
+}
+.picture-skroll {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.picture-skroll._active {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 .galery::after {
   position: absolute;
