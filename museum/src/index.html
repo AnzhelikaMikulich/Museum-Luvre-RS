@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width,initial-scale=1,maximumscale"
     />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -699,7 +703,7 @@
             </p>
           </div>
           <div class="contact-map">
-            <img src="./assets/map.png" alt="map" />
+            <div id="map"></div>
           </div>
         </div>
       </div>
@@ -842,6 +846,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

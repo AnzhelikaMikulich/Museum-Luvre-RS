@@ -1,4 +1,7 @@
 import randomImg from "./galerry";
+//-------Cross-check-------//
+console.log('Привет,ксожалению пока не успела выполнить весь функционал,но надеюсь вы повремение с проверкой и дадите мне еще немножко времени до конца кросс-чека\n Video self-check\n   \n Total points - 63')
+
 
 //-------Galerry-------//
 
@@ -131,28 +134,36 @@ document.body.addEventListener("mousemove", (e) => {
     return;
   }
   let x = e.pageX;
+  console.log(x)
   x -= exploreSlider.getBoundingClientRect().left;
   worksExploreSlider(x);
   pauseEvents(e);
 });
-document.body.addEventListener("touchstart", () => {
+exploreSlider.addEventListener("touchstart", () => {
   isActiveSlider = true;
 });
-document.body.addEventListener("touchend", () => {
+exploreSlider.addEventListener("touchend", () => {
   isActiveSlider = false;
 });
-document.body.addEventListener("mouseleave", () => {
+exploreSlider.addEventListener("touchcancel", () => {
   isActiveSlider = false;
 });
-document.body.addEventListener("touchstart", (e) => {
+exploreSlider.addEventListener("touchmove", (e) => {
   if (!isActiveSlider) {
     return;
   }
-  let x = e.pageX;
+  let x ;
+  let i;
+  for (i = 0; e < e.changedTouches.length; i++) {
+    x  = e.changedTouches[i].pageX
+    
+  }
+  
   x -= exploreSlider.getBoundingClientRect().left;
   worksExploreSlider(x);
   pauseEvents(e);
 });
+
 
 //============ Burger====================
 
@@ -192,3 +203,35 @@ function onMenuLinksClick(e) {
     e.preventDefault();
   }
 }
+
+
+//=======Map=====
+
+function initMapboxGLJS() {
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW5nZWxpa2FtaWt1bGljaCIsImEiOiJja3VuNHZkM3YxanR6MnBydnE1ZnFpM3Q5In0.Lccp5S28NmcGXLk5R7x-ew';
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v10',
+    center: [2.3364, 48.86091],
+    zoom: 15.78,
+  });
+
+  map.addControl(new mapboxgl.NavigationControl());
+  const marker1 = new mapboxgl.Marker({
+    color: "#000000",
+  }).setLngLat([2.3364, 48.86091]).addTo(map);
+  const marker2 = new mapboxgl.Marker({
+    color: "#808080",
+  }).setLngLat([2.3333, 48.8602]).addTo(map);
+  const marker3 = new mapboxgl.Marker({
+    color: "#808080",
+  }).setLngLat([2.3397, 48.8607]).addTo(map);
+  const marker4 = new mapboxgl.Marker({
+    color: "#808080",
+  }).setLngLat([2.3330, 48.8619]).addTo(map);
+  const marker5 = new mapboxgl.Marker({
+    color: "#808080",
+  }).setLngLat([2.3365, 48.8625]).addTo(map);
+}
+initMapboxGLJS();
