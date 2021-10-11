@@ -4,7 +4,7 @@ import randomImg from "./galerry";
 
 randomImg()
 
-
+//-------Video-------//
 const progress = document.querySelectorAll(".progress");
 progress.forEach((element) =>
   element.addEventListener("input", function () {
@@ -104,7 +104,6 @@ let isActiveSlider = false;
 document,
   addEventListener("DOMContentLoaded", () => {
     let width = exploreSlider.offsetWidth;
-    // beforeImg.style.width = `720px`;
   });
 
 const worksExploreSlider = (x) => {
