@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "rss-scripts": "^0.1.3"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }

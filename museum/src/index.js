@@ -1,4 +1,6 @@
 import randomImg from "./galerry";
+import $ from 'jquery';
+import 'slick-carousel';
 //-------Cross-check-------//
 console.log('Привет,ксожалению пока не успела выполнить весь функционал,но надеюсь вы повремение с проверкой и дадите мне еще немножко времени до конца кросс-чека\n Video self-check\n   \n Total points - 63')
 
@@ -235,3 +237,14 @@ function initMapboxGLJS() {
   }).setLngLat([2.3365, 48.8625]).addTo(map);
 }
 initMapboxGLJS();
+
+//=====VideoSlider=======
+
+$(document).ready(function () {
+  $('.video-row').slick({
+    arrows:true,
+    dots:true
+
+  })
+  
+})
