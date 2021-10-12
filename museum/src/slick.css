@@ -1,5 +1,7 @@
 .slick-track {
   display: flex;
+  height: 254px;
+  gap: 30px;
 }
 .slick-list {
   overflow: hidden;
@@ -42,4 +44,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
+}
+.slick-active button {
+  background-color: #333333;
 }
