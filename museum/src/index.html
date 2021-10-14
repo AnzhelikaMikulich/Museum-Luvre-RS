@@ -376,15 +376,21 @@
                 <h4 class="ticket-type">Ticket Type</h4>
                 <label class="container-check"
                   >Permanent exhibition
-                  <input type="radio" checked="checked" name="radio" />
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                    class="ticket-type-radio" />
                   <span class="checkmark"></span
                 ></label>
                 <label class="container-check"
-                  >Temporary exhibition <input type="radio" name="radio" />
+                  >Temporary exhibition
+                  <input type="radio" name="radio" class="ticket-type-radio" />
                   <span class="checkmark"></span
                 ></label>
                 <label class="container-check"
-                  >Combined Admission <input type="radio" name="radio" />
+                  >Combined Admission
+                  <input type="radio" name="radio" class="ticket-type-radio" />
                   <span class="checkmark"></span
                 ></label>
               </div>
@@ -393,7 +399,7 @@
                 <p class="ticket-category-people">Basic 18+</p>
                 <div class="tickets-count">
                   <button
-                    class="tickets-count-btn"
+                    class="tickets-count-btn tickets-count-btn-one"
                     type="button"
                     onclick="this.nextElementSibling.stepDown()"
                   >
@@ -405,10 +411,10 @@
                     max="20"
                     value="1"
                     readonly="readonly"
-                    class="tickets-number basic"
+                    class="tickets-number basic ticket-basic"
                   />
                   <button
-                    class="tickets-count-btn"
+                    class="tickets-count-btn tickets-count-btn-one"
                     type="button"
                     onclick="this.previousElementSibling.stepUp()"
                   >
@@ -418,7 +424,7 @@
                 <p class="ticket-category-people people1024">Senior 65+</p>
                 <div class="tickets-count">
                   <button
-                    class="tickets-count-btn"
+                    class="tickets-count-btn tickets-count-btn-one"
                     type="button"
                     onclick="this.parentNode.querySelector('.senior').stepDown()"
                   >
@@ -430,17 +436,19 @@
                     max="20"
                     value="1"
                     readonly="readonly"
-                    class="tickets-number senior"
+                    class="tickets-number senior ticket-senior"
                   />
                   <button
-                    class="tickets-count-btn"
+                    class="tickets-count-btn tickets-count-btn-one"
                     type="button"
                     onclick="this.parentNode.querySelector('.senior').stepUp()"
                   >
                     +
                   </button>
                 </div>
-                <h4 class="ticket-type ticket-cost">Total € 220</h4>
+                <h4 class="ticket-type ticket-cost">
+                  Total € <span class="totalcost"></span>
+                </h4>
                 <a href="#popap" class="ticketc-btn">Buy Now</a>
               </div>
             </div>
