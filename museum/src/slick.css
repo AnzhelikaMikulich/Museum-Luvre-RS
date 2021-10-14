@@ -3,6 +3,10 @@
   height: 254px;
   gap: 30px;
 }
+.video-row-big.slick-slider {
+  display: flex;
+  height: 650px;
+}
 .slick-list {
   overflow: hidden;
 }
